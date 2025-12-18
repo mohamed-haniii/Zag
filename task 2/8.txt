@@ -1,0 +1,22 @@
+
+    Books {
+        int book_id PK
+        varchar book_title
+        int publisher_id FK
+    }
+
+    Publishers {
+        int publisher_id PK
+        varchar publisher_name
+        varchar publisher_city
+    }
+
+    BookAuthors {
+        int book_id FK
+        varchar author_name
+    }
+
+    BookGenres {
+        int book_id FK
+        varchar genre
+    }
